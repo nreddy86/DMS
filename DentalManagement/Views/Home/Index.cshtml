@@ -1,0 +1,285 @@
+﻿@{
+    ViewBag.Title = "Dental Chart";
+}
+@using DentalManagement.Models
+@model ChartVm
+<main>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="bg-light border-right sidebar-wrapper">
+            <div class="sidebar-heading">Procedures</div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="100">Bleaching</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="125">Bridge</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="150">Ceramic Inlay</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="200">Ceramic Onlay</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="125">Composite Filling</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="125">Composite Inlay</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="159">Composite Onlay</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="185">Crown</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="220">Extraction</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="300">Gingivectory</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light" data-amount="500">Implant</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <h4 class="main-content_head">Dental OP Restorative Chart (@Model.PatientName)</h4>
+              
+                <div class="c-board">
+                    <div class="c-teeth_wrap">
+                        <div class="c-teeth_upper">
+                            <div class="c-teeth" data-teeth-no="1">
+                                <i class="sprite sprite-t_1"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">1</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="2">
+                                <i class="sprite sprite-t_2"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">2</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="3">
+                                <i class="sprite sprite-t_3"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">3</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="4">
+                                <i class="sprite sprite-t_4"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">4</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="5">
+                                <i class="sprite sprite-t_5"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">5</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="6">
+                                <i class="sprite sprite-t_6"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">6</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="7">
+                                <i class="sprite sprite-t_7"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">7</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="8">
+                                <i class="sprite sprite-t_8"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">8</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="9">
+                                <i class="sprite sprite-t_9"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">9</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="10">
+                                <i class="sprite sprite-t_10"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">10</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="11">
+                                <i class="sprite sprite-t_11"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">11</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="12">
+                                <i class="sprite sprite-t_12"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">12</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="13">
+                                <i class="sprite sprite-t_13"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">13</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="14">
+                                <i class="sprite sprite-t_14"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">14</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="15">
+                                <i class="sprite sprite-t_15"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">15</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="16">
+                                <i class="sprite sprite-t_16"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">16</div>
+                            </div>
+                        </div>
+                        <div class="c-teeth_lower">
+                            <div class="c-teeth" data-teeth-no="17">
+                                <i class="sprite sprite-t_17"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">17</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="18">
+                                <i class="sprite sprite-t_18"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">18</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="19">
+                                <i class="sprite sprite-t_19"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">19</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="20">
+                                <i class="sprite sprite-t_20"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">20</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="21">
+                                <i class="sprite sprite-t_21"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">21</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="22">
+                                <i class="sprite sprite-t_22"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">22</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="23">
+                                <i class="sprite sprite-t_23"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">23</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="24">
+                                <i class="sprite sprite-t_24"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">24</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="25">
+                                <i class="sprite sprite-t_25"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">25</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="26">
+                                <i class="sprite sprite-t_26"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">26</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="27">
+                                <i class="sprite sprite-t_27"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">27</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="28">
+                                <i class="sprite sprite-t_28"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">28</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="29">
+                                <i class="sprite sprite-t_29"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">29</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="30">
+                                <i class="sprite sprite-t_30"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">30</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="31">
+                                <i class="sprite sprite-t_31"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">31</div>
+                            </div>
+                            <div class="c-teeth" data-teeth-no="32">
+                                <i class="sprite sprite-t_32"></i>
+                                <div class="c-teeth_wheel"></div>
+                                <div class="c-teeth_number">32</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                    <button type="button" class="btn btn-primary" id="btnSave">Save Chart</button>
+                    <table class="table c-table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Created Date</th>
+                                <th scope="col">Tooth</th>
+                                <th scope="col">Surface</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Amount ($)</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <input type="hidden" id="patientId" name="patientId" value="@Model.PatientId">
+</main>
+<template id="t-row">
+    <tr>
+        <th class="t-date" scope="row">25-2-2020</th>
+        <td class="t-no">8</td>
+        <td class="t-surface">FL</td>
+        <td class="t-des">Lorem ipsum dolor sit amet.</td>
+        <td class="t-amont">3000</td>
+        <td class="t-status">In Progress</td>
+        <td class="t-delete">
+            <button type="button" class="btn btn-default btn-lg btn-delete">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+        </td>
+    </tr>
+</template>
+<template id="svgWheel">
+    <svg width="57"
+         height="57"
+         viewBox="0 0 57 57"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+         id="t1w">
+        <g class="circle">
+            <g class="part part2">
+                <path d="M54.369 17.785A27.998 27.998 0 0156.496 28H43.492C43.234 20.113 36.887 13.767 29 13.508V.504a28 28 0 0125.369 17.28z"
+                      fill="#fff" />
+                <path d="M54.369 17.785A27.998 27.998 0 0156.496 28H43.492C43.234 20.113 36.887 13.767 29 13.508V.504a28 28 0 0125.369 17.28z"
+                      fill="#fff" />
+                <path d="M54.369 17.785A27.998 27.998 0 0156.496 28H43.492C43.234 20.113 36.887 13.767 29 13.508V.504a28 28 0 0125.369 17.28z"
+                      stroke="#8f8386" />
+            </g>
+            <g class="part part1">
+                <path d="M17.785 2.631A28 28 0 0128 .504v13.004c-7.887.259-14.233 6.605-14.492 14.492H.504a28 28 0 0117.28-25.369z"
+                      fill="#fff" />
+                <path d="M17.785 2.631A28 28 0 0128 .504v13.004c-7.887.259-14.233 6.605-14.492 14.492H.504a28 28 0 0117.28-25.369z"
+                      fill="#fff" />
+                <path d="M17.785 2.631A28 28 0 0128 .504v13.004c-7.887.259-14.233 6.605-14.492 14.492H.504a28 28 0 0117.28-25.369z"
+                      stroke="#8f8386" />
+            </g>
+            <g class="part part4">
+                <path d="M28 43.492v13.004A28 28 0 01.504 29h13.004c.259 7.887 6.605 14.233 14.492 14.492z"
+                      fill="#fff" />
+                <path d="M28 43.492v13.004A28 28 0 01.504 29h13.004c.259 7.887 6.605 14.233 14.492 14.492z"
+                      fill="#fff" />
+                <path d="M28 43.492v13.004A28 28 0 01.504 29h13.004c.259 7.887 6.605 14.233 14.492 14.492z"
+                      stroke="#8f8386" />
+            </g>
+            <g class="part part3">
+                <path d="M56.495 29A28 28 0 0129 56.495V43.492c7.887-.258 14.233-6.605 14.492-14.492h13.004z"
+                      fill="#fff" />
+                <path d="M56.495 29A28 28 0 0129 56.495V43.492c7.887-.258 14.233-6.605 14.492-14.492h13.004z"
+                      fill="#fff" />
+                <path d="M56.495 29A28 28 0 0129 56.495V43.492c7.887-.258 14.233-6.605 14.492-14.492h13.004z"
+                      stroke="#8f8386" />
+            </g>
+            <g class="part part5">
+                <circle cx="28.5" cy="28.5" r="14" fill="#fff" />
+                <circle cx="28.5" cy="28.5" r="14" fill="#fff" />
+                <circle cx="28.5" cy="28.5" r="14" stroke="#8f8386" />
+            </g>
+        </g>
+    </svg>
+</template>
+

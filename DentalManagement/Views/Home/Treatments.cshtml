@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Treatments";
+}
+
+@using DentalManagement.Models
+@model ProcedureVm
+
+<div class="table-wrap">
+    <table class="table c-table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Patient Name</th>
+                <th scope="col">CreatedOn</th>
+                <th scope="col">Tooth</th>
+                <th scope="col">Description</th>
+                <th scope="col">Surface</th>
+                <th scope="col">Status</th>
+                <th scope="col">Dentist</th>
+                <th scope="col">Amount</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.procedures)
+            {
+            <tr>
+                <th class="t" scope="row">@item.PatientName</th>
+                <td class="t">@item.CreatedOn</td>
+                <td class="t">@item.Tooth</td>
+                <td class="t">@item.Description</td>
+                <td class="t">@item.Surface</td>
+                <td class="t">@item.Status</td>
+                <td class="t">@item.Dentist</td>
+                <td class="t">@item.Amount</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

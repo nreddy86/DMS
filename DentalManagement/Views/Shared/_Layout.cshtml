@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>@ViewBag.Title - Web site</title>
+    @Styles.Render("~/Content/css")
+</head>
+@{
+    bool IsLoggedIn = Session["IsAuthenticated"] != null ? (bool)Session["IsAuthenticated"] : false;
+    string UserName = Session["UserName"] != null ? (string)Session["UserName"] : string.Empty;
+}
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/Home/Patients">Dental Clinic System</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            @if (IsLoggedIn)
+            {
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Home/Patients">Patients<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/Treatments">Treatments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/contact">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Logged in as <strong>@UserName</strong>
+                        <a href="/Account/LogOut">Sign Out</a>
+                    </span>
+                </div>
+            }
+        </nav>
+    </header>
+    @RenderBody()
+    <footer>
+        <p> &copy;Copyrights 2020 - Dental Clinic System</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/main")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

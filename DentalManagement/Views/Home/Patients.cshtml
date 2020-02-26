@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Patients";
+}
+@using DentalManagement.Models
+@model PatientsVm
+
+<div class="table-wrap">
+    <table class="table c-table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Date Of Birth</th>
+                <th scope="col">Email</th>
+                <th scope="col">Contact No</th>
+                <th scope="col">Status</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.patients)
+            {
+                <tr>
+                    <th class="t" scope="row">@item.FirstName</th>
+                    <td class="t">@item.LastName</td>
+                    <td class="t">@item.Surname</td>
+                    <td class="t">@item.DateOfBirth</td>
+                    <td class="t">@item.Email</td>
+                    <td class="t">@item.ContactNo</td>
+                    <td class="t">@item.Status</td>
+                    <td class="t">
+                        <a class="btn btn-link" href="/Home/Index/@item.Id">Procedure</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

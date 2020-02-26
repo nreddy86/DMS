@@ -1,0 +1,319 @@
+html,
+body {
+  height: 100%;
+}
+
+/* styles starts here */
+
+svg {
+  display: inline-flex;
+  width: 100%;
+}
+
+.part {
+  transform-origin: center;
+  transform: rotate(45deg);
+}
+
+.part.active {
+  fill: #daa4af;
+}
+
+.c-teeth {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.c-teeth_wheel {
+  display: inline-block;
+}
+.c-teeth_lower,
+.c-teeth_upper {
+  height: 250px;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-around;
+}
+
+.c-teeth_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  align-items: center;
+  box-shadow: -1px -1px 12px 0px #807a7a;
+  border-radius: 6px;
+  transform: scale(0.9) translateX(-4%);
+  max-width: 106%;
+}
+
+.c-teeth_number {
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 3px;
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px;
+}
+.c-teeth_lower {
+  flex-direction: row-reverse;
+}
+
+.c-teeth_lower .c-teeth {
+  flex-direction: column-reverse;
+}
+
+.sprite {
+  background-image: url('../img/spritesheet.png');
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+.sprite-t_1 {
+  width: 75px;
+  height: 138px;
+  background-position: -5px -5px;
+}
+
+.sprite-t_10 {
+  width: 54px;
+  height: 138px;
+  background-position: -90px -5px;
+}
+
+.sprite-t_11 {
+  width: 54px;
+  height: 138px;
+  background-position: -154px -5px;
+}
+
+.sprite-t_12 {
+  width: 68px;
+  height: 138px;
+  background-position: -218px -5px;
+}
+
+.sprite-t_13 {
+  width: 68px;
+  height: 138px;
+  background-position: -296px -5px;
+}
+
+.sprite-t_14 {
+  width: 68px;
+  height: 138px;
+  background-position: -374px -5px;
+}
+
+.sprite-t_15 {
+  width: 68px;
+  height: 138px;
+  background-position: -452px -5px;
+}
+
+.sprite-t_16 {
+  width: 68px;
+  height: 138px;
+  background-position: -530px -5px;
+}
+
+.sprite-t_17 {
+  width: 75px;
+  height: 138px;
+  background-position: -5px -153px;
+}
+
+.sprite-t_18 {
+  width: 75px;
+  height: 138px;
+  background-position: -90px -153px;
+}
+
+.sprite-t_19 {
+  width: 75px;
+  height: 138px;
+  background-position: -175px -153px;
+}
+
+.sprite-t_2 {
+  width: 75px;
+  height: 138px;
+  background-position: -260px -153px;
+}
+
+.sprite-t_20 {
+  width: 75px;
+  height: 138px;
+  background-position: -345px -153px;
+}
+
+.sprite-t_21 {
+  width: 75px;
+  height: 138px;
+  background-position: -430px -153px;
+}
+
+.sprite-t_22 {
+  width: 75px;
+  height: 138px;
+  background-position: -515px -153px;
+}
+
+.sprite-t_23 {
+  width: 75px;
+  height: 138px;
+  background-position: -5px -301px;
+}
+
+.sprite-t_24 {
+  width: 75px;
+  height: 138px;
+  background-position: -90px -301px;
+}
+
+.sprite-t_25 {
+  width: 75px;
+  height: 138px;
+  background-position: -175px -301px;
+}
+
+.sprite-t_26 {
+  width: 75px;
+  height: 138px;
+  background-position: -260px -301px;
+}
+
+.sprite-t_27 {
+  width: 75px;
+  height: 138px;
+  background-position: -345px -301px;
+}
+
+.sprite-t_28 {
+  width: 75px;
+  height: 138px;
+  background-position: -430px -301px;
+}
+
+.sprite-t_29 {
+  width: 75px;
+  height: 138px;
+  background-position: -515px -301px;
+}
+
+.sprite-t_3 {
+  width: 75px;
+  height: 138px;
+  background-position: -5px -449px;
+}
+
+.sprite-t_30 {
+  width: 75px;
+  height: 138px;
+  background-position: -90px -449px;
+}
+
+.sprite-t_31 {
+  width: 75px;
+  height: 138px;
+  background-position: -175px -449px;
+}
+
+.sprite-t_32 {
+  width: 75px;
+  height: 138px;
+  background-position: -260px -449px;
+}
+
+.sprite-t_4 {
+  width: 75px;
+  height: 138px;
+  background-position: -345px -449px;
+}
+
+.sprite-t_5 {
+  width: 60px;
+  height: 138px;
+  background-position: -430px -449px;
+}
+
+.sprite-t_6 {
+  width: 60px;
+  height: 138px;
+  background-position: -500px -449px;
+}
+
+.sprite-t_7 {
+  width: 54px;
+  height: 138px;
+  background-position: -608px -5px;
+}
+
+.sprite-t_8 {
+  width: 54px;
+  height: 138px;
+  background-position: -600px -153px;
+}
+
+.sprite-t_9 {
+  width: 54px;
+  height: 138px;
+  background-position: -600px -301px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.sidebar-wrapper {
+  flex: 1 0 auto;
+  overflow: auto;
+}
+
+.sidebar-heading {
+  padding: 20px 16px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.c-board {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-content_head {
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.main-content {
+  width: auto;
+  overflow: hidden;
+}
+
+footer {
+  padding: 1rem 1rem;
+  background: #343a40;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+main {
+  margin-bottom: 60px;
+}
